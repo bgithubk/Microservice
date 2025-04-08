@@ -1,0 +1,18 @@
+# Package Files #
+*.jar
+*.war
+
+# Compiled Java classes
+*.class
+
+# Spring Tool Suite (STS) metadata
+.metadata/
+
+#SonarQube files
+.sonarlint/
+
+#Ignore all subdirectories
+**/target/
+**/.settings/
+**/.mvn/
+**/.classpath
