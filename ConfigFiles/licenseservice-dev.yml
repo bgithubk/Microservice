@@ -1,0 +1,9 @@
+spring:
+ datasource:
+  url: "jdbc:postgresql://database:5432/ms_license_service_dev"
+  username: "<username>"
+  password: "<password>"
+  testWhileIdle: "true"
+  validationQuery: "SELECT 1"
+ jpa:
+  show-sql: "true"
