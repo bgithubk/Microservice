@@ -9,4 +9,5 @@ spring:
   config:
     server:
       native:
-        searchLocations: file:///path to ConfigFiles Folder
+        searchLocations: file:///D:/bk/other/Microservices/Project/ConfigFiles
+  

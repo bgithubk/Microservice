@@ -1,9 +1,18 @@
 spring:
  datasource:
-  url: "jdbc:postgresql://database:5432/ms_license_service_local"
   username: "<username>"
   password: "<password>"
-  testWhileIdle: "true"
-  validationQuery: "SELECT 1"
+  url: jdbc:postgresql://localhost:5432/ms_license_service_local
+  testWhileIdle: true
+  validationQuery: SELECT 1
  jpa:
-  show-sql: "true"
+  hibernate:
+   ddl-auto: update
+  show-sql: true
+example:
+ property: Default Comment
+management:
+ endpoints:
+  web:
+   exposure:
+    include: health,env   
