@@ -1,8 +1,8 @@
 spring:
  datasource:
-  username: "<username>"
-  password: "<password>"
   url: jdbc:postgresql://localhost:5432/ms_license_service_dev
+  username: postgres
+  password: root
   driver-class-name: org.postgresql.Driver
   testWhileIdle: true
   validationQuery: SELECT 1
@@ -14,3 +14,4 @@ management:
   web:
    exposure:
     include: health,env
+    

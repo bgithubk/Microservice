@@ -1,10 +1,10 @@
 spring:
  application:
-  name: licenseservice
+  name: organizationservice
  profiles:
   active: default
  config:
-  import: configserver:http://localhost:8888
+  import: configserver:http://localhost:8888	
 
 eureka:
  instance:
@@ -13,4 +13,4 @@ eureka:
   registerWithEureka: true
   fetchRegistry: true
   serviceUrl:
-   defaultZone: http://localhost:8761/eureka/	
+   defaultZone: http://localhost:8761/eureka/

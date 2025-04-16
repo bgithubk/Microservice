@@ -24,6 +24,18 @@ public class License {
 	
 	@Transient
 	private String comment;
+	
+	@Transient
+	private String organizationName ="";
+
+	@Transient
+	private String contactName ="";
+		
+	@Transient
+	private String contactPhone ="";
+		
+	@Transient
+	private String contactEmail ="";
 
 	public String getLicenseId() {
 		return licenseId;
@@ -89,5 +101,59 @@ public class License {
 		this.setComment(exampleProperty);
 		return this;
 	}
+
+	public String getOrganizationName() {
+		return organizationName;
+	}
+
+	public void setOrganizationName(String organizationName) {
+		this.organizationName = organizationName;
+	}
+
+	public String getContactName() {
+		return contactName;
+	}
+
+	public void setContactName(String contactName) {
+		this.contactName = contactName;
+	}
+
+	public String getContactPhone() {
+		return contactPhone;
+	}
+
+	public void setContactPhone(String contactPhone) {
+		this.contactPhone = contactPhone;
+	}
+
+	public String getContactEmail() {
+		return contactEmail;
+	}
+
+	public void setContactEmail(String contactEmail) {
+		this.contactEmail = contactEmail;
+	}
+
+	public License withOrganizationName(String name) {
+		this.setOrganizationName(name);
+		return this;
+	}
+
+	public License withContactName(String contactName2) {
+		this.setContactName(contactName2);
+		return this;
+	}
+
+	public License withContactEmail(String contactEmail2) {
+		this.setContactEmail(contactEmail2);
+		return this;
+	}
+
+	public License withContactPhone(String contactPhone2) {
+		this.setContactPhone(contactPhone2);
+		return this;
+	}
+	
+	
 
 }
